@@ -1,0 +1,56 @@
+.productDetails {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fafafa;
+  text-align: center;
+
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+
+  .price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .productImage {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .consultButton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #25d366; // verde WhatsApp
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+
+    &:hover {
+      background-color: #1ebe5d;
+    }
+  }
+
+  .notFound {
+    font-size: 1.25rem;
+    color: red;
+    font-weight: bold;
+  }
+}

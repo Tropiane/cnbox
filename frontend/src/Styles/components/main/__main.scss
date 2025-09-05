@@ -1,0 +1,56 @@
+@use '../../_colors.scss' as *;
+@use './__targets.scss';
+main{
+    margin-top: 5%;
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .textPresentation{
+            margin-bottom: 5%;
+            width: 50%;
+            text-align: center;
+            h1{
+                font-weight: 500;
+                font-style: italic;
+            }
+        }
+
+        .targetContainer{
+            margin-bottom: 5%;
+        }
+
+        .catalogContainer{
+            margin-bottom: 5%;
+            .catalog{
+                gap: 2rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@keyframes rebotar{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

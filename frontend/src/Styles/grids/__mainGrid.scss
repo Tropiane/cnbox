@@ -1,0 +1,18 @@
+main{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "presentation" 
+    "carousel"
+    "catalog";
+
+    .textPresentation{
+        grid-area: presentation;
+    }
+    .targetContainer{
+        grid-area: carousel;
+    }
+    .catalogContainer{
+        grid-area: catalog;
+    }
+}

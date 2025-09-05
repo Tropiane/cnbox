@@ -1,0 +1,15 @@
+footer{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "social"
+    "navBar"; 
+
+    .socialMedia{
+        grid-area: social;
+    }
+    .footerNav{
+        grid-area: navBar;
+    }
+}

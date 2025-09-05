@@ -1,0 +1,74 @@
+@use '../__colors.scss' as *;
+@media (max-width: 480px) {
+  
+    header{
+        height: 50vh;
+        .navPhone{
+            display: flex;
+            justify-content: start;
+            align-items: self-start;
+            flex-direction: row;
+            gap: 1rem;
+            z-index: 1;
+            padding: 1rem;
+            
+
+            details{
+            summary{
+                list-style: none;
+                background-color: $white-color;
+                border-radius: 50%;
+                padding: 1rem;
+                .menuIcon{
+                font-size: 2rem;
+                }
+            }
+
+            .navPhoneLinks{
+                list-style: none;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                gap: 0px;
+                a{
+                color: $black-color;
+                border-bottom: 1px solid $primary-color;
+                padding: 0;
+                margin: 1rem;
+                }
+            }
+            }
+        }
+
+        .title{
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            z-index: 1;
+            img{
+                width: 11rem;
+                height: auto;
+            }
+        }
+
+        .presentation{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+
+            h2{
+            color: $black-color;
+            margin: 0%;
+            padding: 0%;
+            width: max-content;
+            span{
+                color: $primary-color;
+                font-weight: 700;
+                border-bottom: 15px solid $primary-color;
+                border-radius: 15px;
+            }
+            }
+        }
+    }
+}

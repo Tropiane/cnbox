@@ -1,0 +1,57 @@
+<!-- CNBOX · Cupcake icon + wordmark (bold sans) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="CNBOX cupcake logo">
+  <title>CNBOX - Cupcake</title>
+
+  <!-- Background (transparent) -->
+  <rect width="100%" height="100%" fill="none"></rect>
+
+  <!-- Cupcake group -->
+  <g id="cupcake" transform="translate(0,10)" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Frosting (outline + fill) -->
+    <path d="M300 110 
+             C260 80, 220 100, 210 130
+             C180 130, 160 160, 190 180
+             C170 210, 200 240, 235 225
+             C260 260, 340 260, 365 225
+             C400 240, 430 210, 410 180
+             C440 160, 420 130, 390 130
+             C380 100, 340 80, 300 110 Z" fill="none" stroke="#111" stroke-width="6"></path>
+
+    <!-- Frosting inner decorative swirls -->
+    <path d="M250 155 C270 140, 290 140, 310 155" fill="none" stroke="#111" stroke-width="4"></path>
+    <path d="M280 175 C295 165, 320 165, 335 175" fill="none" stroke="#111" stroke-width="3"></path>
+
+    <!-- Cupcake top small scallops for detail -->
+    <path d="M235 200 a18 12 0 0 0 36 0 a18 12 0 0 0 36 0 a18 12 0 0 0 36 0" fill="none" stroke="#111" stroke-width="3"></path>
+
+    <!-- Cupcake base (liner) -->
+    <path d="M200 230
+             L400 230
+             C420 380, 420 410, 300 410
+             C180 410, 180 380, 200 230 Z" fill="none" stroke="#111" stroke-width="6"></path>
+
+    <!-- Vertical liner lines -->
+    <g stroke="#111" stroke-width="3" fill="none">
+      <path d="M220 235 L250 385"></path>
+      <path d="M250 235 L280 385"></path>
+      <path d="M280 235 L310 385"></path>
+      <path d="M310 235 L340 385"></path>
+      <path d="M340 235 L370 385"></path>
+    </g>
+
+    <!-- Small sparkle/star at upper-right (optional accent) -->
+    <g transform="translate(435,105) scale(0.9)" fill="#111">
+      <path d="M6 0 L8.5 4.5 L13.5 6 L8.5 7.5 L6 12 L3.5 7.5 L-1.5 6 L3.5 4.5 Z"></path>
+    </g>
+
+  </g>
+
+  <!-- Thin divider line -->
+  <line x1="85" x2="515" y1="460" y2="460" stroke="#111" stroke-width="4" stroke-linecap="round"></line>
+
+  <!-- Wordmark -->
+  <text x="300" y="540" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-weight="800" font-size="64" letter-spacing="6" fill="#111">
+    CNBOX
+  </text>
+</svg>
