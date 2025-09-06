@@ -12,9 +12,10 @@ export const products: Product[] = [
   {
     id: 2,
     title: "Postres Shots",
-    description: "Postres decorados con brownies y/o frutillas",
+    description: "Postres shots decorados",
     price: 700,
     image: "1UODV-wkexVw-IETqeR5ap0_0pURTiGUT",
+    details: ["Diferentes gustos", "Diferentes decoraciones"],
   },
   {
     id: 3,
