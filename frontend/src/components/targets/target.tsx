@@ -1,16 +1,6 @@
 import Button from "../main/button";
 import TargetDetails from "../targets/targetDetails";
-
-export type TargetProps = {
-  title: string;
-  description: string;
-  id: number;
-  targetClass?: string;
-  price?: number;
-  isPlan?: boolean;
-  isProduct?: boolean;
-  image?: string;
-};
+import type { TargetProps } from "../../interfaces/interfaces";
 
 function Target({
   title,
@@ -21,7 +11,10 @@ function Target({
   isPlan,
   isProduct,
   image,
+  details,
 }: TargetProps) {
+  const whatsappNumber = "095150610"; // reemplazá por tu número
+  const whatsappMessage =(title:string)=>{ return `Hola, quiero consultar sobre el ${title}` }
   if (isPlan) {
     return (
       <div className={`${targetClass}`} id={`plan-target-${id}`}>
@@ -36,7 +29,15 @@ function Target({
         />
         <h3 className="thirdTitleFont">{title}</h3>
         <p className="textFont">{description}</p>
-        <TargetDetails />
+        {details && <TargetDetails details={details} />}
+        <a
+            href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+              whatsappMessage(title)
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="consultButton"
+          >Consultar</a>
       </div>
     );
   } else if (isProduct) {

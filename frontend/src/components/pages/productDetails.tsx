@@ -29,7 +29,13 @@ export function ProductDetails() {
             loading="lazy"
             className="productImage"
           />
-
+          {product.details && 
+          <ul>
+            {product.details.map((detail, index) => (
+              <li key={index}>{detail}</li>
+          ))}
+          </ul>
+          }
           <a
             href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
               whatsappMessage

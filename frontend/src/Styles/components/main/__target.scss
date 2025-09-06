@@ -1,7 +1,44 @@
+@use '../../_colors.scss' as *;
 .targetInCarousel{
-    
+    .consultButton{
+        cursor: pointer;
+        list-style: none;
+        color: $primary-color;
+        border: 1px solid $terciary-color;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        text-decoration: none;
+        margin-top: 1rem;
+        &:hover{
+            background-color: $terciary-color;
+            color: $white-color;
+            transition: .3s;
+            border: 1px solid $terciary-color;
+            border-radius: 1rem;
+            padding: 0.5rem;
+        }
+    }
+    p{
+        width: 80%;
+    }
+    details{
+        summary{
+            cursor: pointer;
+            list-style: none;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            border-radius: 1rem;
+            padding: 0.5rem;
+        }
+        ul{
+            li{
+                list-style: circle;
+            }
+        }
+    }
     img{
         width: 200px;
+        border-radius: 2rem;
     }
 }
 

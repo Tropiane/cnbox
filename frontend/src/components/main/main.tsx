@@ -8,7 +8,7 @@ function Main() {
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/preguntas-frecuentes" element={<h1>Q&A</h1>} />
+        <Route path="/preguntas-frecuentes" element={<h1>Estamos trabajando en responder todas tus dudas!</h1>} />
         <Route path="/catalogo" element={<Catalog />} />
         {/* El parámetro va así */}
         <Route path="/catalogo/:id" element={<ProductDetails />} />

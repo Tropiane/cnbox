@@ -1,3 +1,8 @@
+.spanFont {
+  font-weight: bold;
+  color: #3d5a80;
+}
+
 @media screen and (min-width: 1024px) {
   .fontNav {
     font-family: "Lato", sans-serif;
@@ -327,7 +332,7 @@ body #root {
     text-align: center;
   }
   .catalogContainer .catalog .targetInCatalog {
-    width: 150px;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -514,6 +519,8 @@ header .title img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(29, 233, 182, 0.7058823529);
+  text-align: center;
 }
 .targetContainer h2 {
   margin-bottom: 2rem;
@@ -669,8 +676,41 @@ footer .footerNav a {
     gap: 1rem;
   }
 }
+.targetInCarousel .consultButton {
+  cursor: pointer;
+  list-style: none;
+  color: #3d5a80;
+  border: 1px solid #ee6c4d;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+.targetInCarousel .consultButton:hover {
+  background-color: #ee6c4d;
+  color: #e0fbfc;
+  transition: 0.3s;
+  border: 1px solid #ee6c4d;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.targetInCarousel p {
+  width: 80%;
+}
+.targetInCarousel details summary {
+  cursor: pointer;
+  list-style: none;
+  color: #3d5a80;
+  border: 1px solid #3d5a80;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.targetInCarousel details ul li {
+  list-style: circle;
+}
 .targetInCarousel img {
   width: 200px;
+  border-radius: 2rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -683,30 +723,6 @@ footer .footerNav a {
     width: 150px;
   }
 }
-.aboutUs {
-  height: 90vh;
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto;
-  grid-template-areas: "text image";
-}
-.aboutUs .aboutUsContent {
-  grid-area: text;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.aboutUs .aboutUsContent h3 {
-  color: #293241;
-  border-bottom: 1px solid #3d5a80;
-}
-.aboutUs img {
-  height: 80vh;
-  grid-area: image;
-  clip-path: xywh(0 5px 100% 75% round 15% 0);
-}
-
 .catalogContainer {
   display: grid;
   grid-template-columns: auto;
@@ -730,6 +746,7 @@ footer .footerNav a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 10px;
 }
 .catalogContainer .catalog .targetInCatalog {
   display: flex;
@@ -737,6 +754,8 @@ footer .footerNav a {
   justify-content: center;
   align-items: center;
   border-radius: 18px;
+  padding: 1rem;
+  background-color: rgba(29, 233, 182, 0.7058823529);
 }
 .catalogContainer .catalog .targetInCatalog img {
   width: 100%;
@@ -759,7 +778,7 @@ footer .footerNav a {
   background-color: transparent;
   border: 1px solid #ee6c4d;
   color: #293241;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   border-radius: 50px;
   font-weight: bold;
   cursor: pointer;
@@ -813,6 +832,13 @@ footer .footerNav a {
 }
 .productDetails .consultButton:hover {
   background-color: #1ebe5d;
+}
+.productDetails ul {
+  list-style: circle inside none;
+  text-align: start;
+}
+.productDetails ul li {
+  margin-bottom: 0.5rem;
 }
 .productDetails .notFound {
   font-size: 1.25rem;

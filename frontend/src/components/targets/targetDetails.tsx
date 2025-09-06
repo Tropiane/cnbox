@@ -1,11 +1,12 @@
 
-function TargetDetails() {
+function TargetDetails({details}: {details?: string[] | undefined}) {
     return (
         <details>
-            <summary>Detalles del plan</summary>
+            <summary>Detalles</summary>
             <ul>
-                <li>detalle 1</li>
-                <li>detalle 2</li>
+                {details?.map((detail, index) => (
+                    <li key={index}>{detail}</li>
+                ))}
             </ul>
         </details>
     )

@@ -47,7 +47,13 @@
       background-color: #1ebe5d;
     }
   }
-
+  ul{
+    list-style: circle inside none;
+    text-align: start;
+    li{
+      margin-bottom: 0.5rem;
+    }
+  }
   .notFound {
     font-size: 1.25rem;
     color: red;

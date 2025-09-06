@@ -7,7 +7,7 @@ function Catalog() {
       <div className="catalogTitle">
         <h3 className="thirdTitleFont">Catalogo</h3>
         <p className="textFont">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+          Seleccioná el producto que querés y presioná <span className="spanFont">consultar</span>
         </p>
       </div>
       <div className="catalog">
